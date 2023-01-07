@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>perfiles</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="initProfiles()">
+    <div class="app">
+        <h1 class="titulo-principal">Completá los datos</h1>
+
+        <div class="form-perfil">
+            <label class="name" for="name">Nombre: </label> <input id="name" required /> <br>
+            <label class="nick" for="nick">Apodo: </label> <input id="nick" required /> <br>
+            <label class="color">Color: </label> <input id="color" type="color" required /> <br>
+            <label class="photo-preview">Foto: </label> <img id="photo-preview" src="img/usuario.jpeg" width="300"
+                height="300" onclick="takePicture()" alt="Foto de perfil"> <input id="photo" /> <br>
+            <button id="btn-save">Guardar</button>
+        </div>
+
+        <div id="cartel" class="nodisp">
+            <div id="mensaje"></div>
+            <div id="mensaje"></div><button id="btn-msj" onclick="closeVacio();">Entendido</button>
+        </div>
+
+        <div id="cartel-apodo-vacio" class="nodisp">
+            <div id="mensaje-apodo-vacio"></div>
+            <div id="mensaje-apodo-vacio"></div><button id="btn-msj-apodo-vacio"
+                onclick="closeApodoVacio();">Entendido</button>
+        </div>
+
+
+        <div id="cartel-apodo-largo" class="nodisp">
+            <div id="mensaje-apodo-largo"></div>
+            <div id="mensaje-apodo-largo"></div><button id="btn-msj-apodo-largo"
+                onclick="closeApodoLargo();">Entendido</button>
+        </div>
+
+        <div id="cartel-color-repetido" class="nodisp">
+            <div id="mensaje-color-repetido"></div>
+            <div id="mensaje-color-repetido"></div><button id="btn-msj-color-repetido"
+                onclick="closeColorRepetido();">Entendido</button>
+        </div>
+    </div>
+
+    <script src="../cordova.js"></script>
+    <script src="js/perfiles.js"></script>
+    <script src="../js/jslib.js"></script>
+
+</body>
+
+
+
+</html>

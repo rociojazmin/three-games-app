@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/all.css">
+
+    <title>GENERALA</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="navbar">
+            <a class="primero-a" href="../home.html"><i class="fa fa-arrow-left-long tamano"></i></a>
+            <a class="segundo-a" onclick="popUp();"><i class="fa fa-gear tamano"></i></a>
+        </div>
+        <h1 class="titulo-principal">Generala</h1>
+        <button class="btn-roll" id="btn-roll" onclick="rollDices()">¡TIRÁ LOS DADOS! (3)</button>
+        <div class="dices-table, izq">
+            <div class="dados" id="dices"></div>
+        </div>
+        <div class="contenedor-tabla, der">
+            <table id="scores">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+            <div id="cartel" class="nodisp">
+                <div id="mensaje"></div><button id="reiniciar" onclick="initGame();">Jugar de nuevo</button>
+                <div id="mensaje"></div><button id="backMenu" onclick="backMenu();">Regresar al menú</button>
+            </div>
+            <div id="ya-anoto" class="nodisp">
+                <div id="anotado"></div>
+                <div id="anotado"></div><button id="cerrar" onclick="closeCerrar();">Entendido</button>
+            </div>
+            <div id="tirar-dados" class="nodisp">
+                <div id="tira"></div>
+                <div id="tira"></div><button id="okay" onclick="closeOkay();">Entendido</button>
+            </div>
+            <div id="cartel-confirm" class="nodisp">
+                <div id="mensaje-confirm"></div>
+                <div id="btn-confirm"></div><button id="btn-si" onclick="closeOkay();">Entendido</button>
+                <div id="btn-confrim"></div><button id="ok" onclick="closeOkay();">Entendido</button>
+            </div>
+            <div id="anotarse" class="nodisp">
+                <div id="anotate"></div>
+                <div id="anotate"></div><button id="entendido" onclick="closeEntendido();">Entendido</button>
+            </div>
+            <div id="primero-doble" class="nodisp">
+                <div id="primero"></div>
+                <div id="primero"></div><button id="doble" onclick="closeDoble();">Entendido</button>
+            </div>
+            <div id="cartel-confirm-juego" class="nodisp">
+                <div id="mensaje-confirm-juego"></div>
+                <button id="que-si">Sí,estoy seguro</button>
+                <button id="que-no">No</button>
+            </div>
+
+            <div id="cartel-sonido" class="nodisp">
+                <div id="mensaje-sonido"> Sonido: </div>
+                <div><button id="encendido" onclick="turnOnSound();">Encender</button> </div>
+                <div><button id="apagado" onclick="turnOffSound();">Apagar</button> </div>
+            </div>
+        </div>
+
+
+        <script src="../cordova.js"></script>
+        <script src="js/generala.js"></script>
+        <script src="js/index.js"></script>
+        <script src="../js/jslib.js"></script>
+        <script src="../fontawesome-free-6.2.1-web/js/all.js"></script>
+</body>
+
+</html>

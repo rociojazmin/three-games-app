@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puntajes</title>
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com/ 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="totalScore(); totales();">
+    <div>
+        <h1 class="titulo-principal">Tabla de puntuación</h1>
+
+        <table id="ranking" cellspacing="0">
+            <thead class="border-bottom"></thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="navbar">
+            <a class="primero-a" href="index.html"><i class="fa fa-user tamano icono-negro"></i></a>
+            <a class="segundo-a" href="home.html"><i class="fa fa-house tamano icono-negro"></i> </a>
+            <a class="active tercero-a" href="puntajes.html"><i class="fa fa-medal tamano"></i></a>
+        </div>
+
+        <div class="totales">
+            <p class="totalPlayer" id="totales1"></p>
+        </div>
+
+        <div class="totales2">
+            <p class="totalPlayer" id="totales2"></p>
+        </div>
+
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/jslib.js"></script>
+    <script src="js/perfiles.js"></script>
+    <script src="fontawesome-free-6.2.1-web/js/all.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memotest</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/medio.css">
+    <link rel="stylesheet" href="../../fontawesome-free-6.2.1-web/css/all.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="primero-a" href="niveles.html"><i class="fa fa-arrow-left-long tamano"></i></a>
+        <a class="segundo-a" onclick="popUp();"><i class="fa fa-gear tamano"></i></a>
+    </div>
+
+    <h1 class="titulo-principal">Medio</h1>
+    <h2 class="titulo-secundario">Turno de <span id="turno"></span></h2>
+    <div id="tablero">
+    </div>
+
+    <div id="cartel-ganador" class="nodisp">
+        <div id="ganador"></div>
+        <button id="reiniciar" onclick="init(16); draw();">Jugar de nuevo</button>
+        <button id="backToMenu" onclick="backToMenu();">Regresar al menú</button>
+    </div>
+
+    <div id="cartel-sonido" class="nodisp">
+        <div id="mensaje-sonido"> Sonido: </div>
+        <div><button id="encendido" onclick="turnOnSound();">Encender</button> </div>
+        <div><button id="apagado" onclick="turnOffSound();">Apagar</button> </div>
+    </div>
+    <script src="../../cordova.js"></script>
+    <script src="../js/medio.js"></script>
+    <script src="../../js/jslib.js"></script>
+    <script src="../js/juego.js"></script>
+</body>
+
+
+</html>
