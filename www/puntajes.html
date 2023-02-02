@@ -15,7 +15,7 @@
 
 <body onload="totalScore(); totales();">
     <div>
-        <h1 class="titulo-principal">Tabla de puntuación</h1>
+        <h1 class="titulo-principal titulo-principal-puntuacion">Tabla de puntuación</h1>
 
         <table id="ranking" cellspacing="0">
             <thead class="border-bottom"></thead>
@@ -37,10 +37,18 @@
         </div>
 
     </div>
-    <script src="cordova.js"></script>
-    <script src="js/jslib.js"></script>
-    <script src="js/perfiles.js"></script>
-    <script src="fontawesome-free-6.2.1-web/js/all.js"></script>
+
+    <div class="dropdown location">
+        <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Perfiles</a>
+            <a href="home.html">Juegos</a>
+            <a href="puntajes.html">Puntajes</a>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/jslib.js"></script>
+        <script src="js/perfiles.js"></script>
+        <script src="fontawesome-free-6.2.1-web/js/all.js"></script>
 
 </body>
 

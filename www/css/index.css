@@ -486,6 +486,11 @@ color: #000000;
   left:58px;
 }
 
+/* ocultamos el menu desplegable en portrait */
+
+.dropdown{
+  display: none;
+}
 
 
 /* Landscape layout (with min-width) */
@@ -573,6 +578,12 @@ margin-left: 0px;
 
 .show {display: block;}
 
+/* navbar en la pagina de puntuaciones ubicacion */
+.location{
+  top: -73px !important;
+}
+
+
 /* sacamos el navbar */
 
 .navbar{
@@ -631,6 +642,140 @@ top: 176px;
 
 .titulo-principal{
   padding-top: 52px;
+}
+
+/* tabla de puntajes */
+
+table{
+width: 404px;
+height: 183px;
+left: 160px;
+top: 92px;
+}
+
+/* botones de total de puntos */
+
+.totales{
+  position: absolute;
+    width: 253px;
+    height: 52px;
+    left: 86px;
+    top: 299px;
+    background: #FFCBAE;
+    box-shadow: 8px 7px 4px rgb(0 0 0 / 50%);
+    border-radius: 15px;
+}
+
+.totalPlayer{
+  padding-left: 56px;
+    padding-top: 15px;
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.totales2{
+  position: absolute;
+  width: 250px;
+  height: 52px;
+  left: 394px;
+  top: 299px;
+  background: #FFCBAE;
+  box-shadow: 8px 7px 4px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+}
+
+.titulo-principal-puntuacion{
+
+padding-top: 25px !important;
+}
+
+/* form */
+
+.name{
+  width: 67px;
+  height: 19px;
+  left: 44px;
+  top: 93px;
+}
+
+
+#name{
+  width: 217px;
+  height: 28px;
+  left: 117px;
+  top: 89px;
+}
+
+.nick{
+width: 57px;
+height: 19px;
+left: 44px;
+top: 174px;
+}
+
+#nick{
+  width: 217px;
+height: 28px;
+left: 117px;
+top: 170px;
+}
+
+.color{
+  width: 48px;
+height: 19px;
+left: 44px;
+top: 254px;
+}
+
+#color{
+  width: 33px;
+height: 28px;
+left: 117px;
+top: 250px;
+}
+
+.photo-preview{
+  width: 40px;
+height: 19px;
+left: 407px;
+top: 93px;
+
+}
+
+#photo-preview{
+  width: 217px;
+height: 185px;
+left: 464px;
+top: 89px;
+}
+
+.titulo-principal-form{
+  padding-top: 21px !important;
+  }
+
+#btn-save{
+position: absolute;
+width: 216px;
+height: 48px;
+left: 258px;
+top: 306px;
+    background: #FF9900;
+    box-shadow: 3px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 25.5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-color: #FF9900;
+
 }
 
 }
