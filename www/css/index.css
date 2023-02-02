@@ -489,5 +489,148 @@ color: #000000;
 
 
 /* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+@media screen and (min-aspect-ratio: 1/1) and (max-width:799px){
+
+/* PERFILES */
+
+ #profiles a:first-of-type p{
+width: 38px;
+height: 24px;
+left: 192px;
+top: 145px;
+position: absolute;
+}
+
+#profiles a:nth-of-type(2) p{
+position: absolute;
+width: 36px;
+height: 24px;
+left: 502px;
+top: 145px;
+}
+
+#profiles a:first-of-type img{
+position: absolute;
+width: 149px;
+height: 149px;
+left: 136px;
+top: 159px;
+margin-left: 0px;
+}
+
+#profiles a:nth-of-type(2) img{
+position: absolute;
+width: 149px;
+height: 149px;
+left: 446px;
+top: 159px;
+margin-left: 0px;
+}
+
+/* menu desplegable */
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+  top: -162px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3e8e41;;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* sacamos el navbar */
+
+.navbar{
+  display: none;
+}
+
+/* JUEGOS  */
+
+/* titulos de los juegos */
+
+.tateti{
+width: 71px;
+height: 21px;
+left: 125px;
+top: 140px;
+}
+
+.generala{
+width: 90px;
+height: 21px;
+left: 321px;
+top: 140px;
+}
+
+.memotest{
+width: 103px;
+height: 21px;
+left: 521px;
+top: 140px;
+}
+
+/* fotos de los juegos */
+
+.tateti-img{
+width: 144px;
+height: 130px;
+left: 88px;
+top: 176px;
+}
+
+.generala-img{
+width: 144px;
+height: 130px;
+left: 294px;
+top: 176px;
+}
+
+.memotest-img{
+width: 144px;
+height: 130px;
+left: 500px;
+top: 176px;
+}
+
+/* titulo principal */
+
+.titulo-principal{
+  padding-top: 52px;
+}
+
 }
