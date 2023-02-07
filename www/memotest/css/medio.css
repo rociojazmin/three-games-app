@@ -250,3 +250,42 @@ margin: 0;
         transform: rotateY(0deg);
     }
 }
+
+@media screen and (min-aspect-ratio: 1/1) and (max-width:799px){
+
+    #tablero{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 126.5px;
+        position: absolute;
+        width: 640px;
+        height: 230px;
+        left:-30px;
+        top: -32px;
+      }
+      .titulo-principal{
+        position: absolute;
+        width: 73px;
+        height: 31px;
+        left: 329px;
+        top: 7px;
+        
+          }
+        
+          .titulo-secundario{
+            position: absolute;
+        width: 137px;
+        height: 27px;
+        left: 298px;
+        top: 51px;
+          }
+
+          .navbar{
+            width: 731px;
+        }
+        
+        .segundo-a{
+            margin-left: 690.22px;
+        }
+    
+    }

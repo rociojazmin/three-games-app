@@ -59,7 +59,9 @@ body {
     font-weight: 700;
     font-size: 36px;
     text-transform: uppercase;
-    color: #FFFFFF;}
+    color: #FFFFFF;
+}
+    
 
 .titulo-secundario{ 
 position: absolute;
@@ -187,4 +189,53 @@ td {
 
 .sinBordeBottom{
     border-bottom: 0px;
+}
+
+@media screen and (min-aspect-ratio: 1/1) and (max-width:799px){
+
+/* TITULOS  */
+
+.titulo-principal{
+    text-align: center;  
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 36px;
+    padding-bottom: 18px;
+    margin: 0;
+    width: auto;
+    height: auto;
+    position: static;
+    }
+    
+.titulo-secundario{
+position: absolute;
+width: 152px;
+height: 29px;
+left: 42px;
+top: 191px;
+}
+
+table{
+    position: absolute;
+    width: 294px;
+    left: 326px;
+    top: -165px;
+    height: 120px;
+    font-size: 2.5em;
+}
+
+.navbar{
+    width: 731px;
+}
+
+.segundo-a{
+    margin-left: 690.22px;
+}
+
+
+
+
 }

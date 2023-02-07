@@ -100,3 +100,47 @@ font-weight: 700;
 font-size: 18px;
 }
 
+@media screen and (min-aspect-ratio: 1/1) and (max-width:799px){
+
+  .titulo-principal{
+  position: absolute;
+  width: 163px;
+  height: 31px;
+  left: 284px;
+  top: 33px;
+  }
+
+  .titulo-secundario{
+    position: absolute;
+width: 280px;
+height: 27px;
+left: 226px;
+top: 76px;
+  }
+
+  #facil{
+position: absolute;
+width: 216px;
+height: 48px;
+left: 24px;
+top: 200px;
+  }
+
+  #medio{
+position: absolute;
+width: 216px;
+height: 48px;
+left: 258px;
+top: 200px;
+  }
+
+  #dificil{
+position: absolute;
+width: 216px;
+height: 48px;
+left: 492px;
+top: 200px;
+  }
+  
+  }
+

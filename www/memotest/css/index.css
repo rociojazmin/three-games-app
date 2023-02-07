@@ -251,3 +251,50 @@ margin: 0;
         transform: rotateY(0deg);
     }
 }
+
+@media screen and (min-aspect-ratio: 1/1) and (max-width:799px){
+
+    .navbar{
+        width: 731px;
+    }
+    
+    .segundo-a{
+        margin-left: 690.22px;
+    }
+
+
+    #tablero{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        padding: 25.5px;
+        position: absolute;
+        width: 657px;
+        height: 324px;
+        left: 0px;
+        top: 35px;
+    }
+
+    .titulo-secundario{
+        position: absolute;
+        width: 139px;
+        height: 27px;
+        left: 427px;
+        top: -6px;
+        font-weight: 400;
+        font-size: 22px;
+        color: #FFFFFF;
+    }
+
+    .titulo-principal{
+        position: absolute;
+        width: 91px;
+        height: 31px;
+        left: 184px;
+        top: -6px;
+        font-weight: 700;
+        font-size: 26px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
