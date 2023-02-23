@@ -775,7 +775,16 @@ top: 306px;
     font-size: 18px;
     text-transform: uppercase;
     border-color: #FF9900;
+}
 
+#cartel, #cartel-apodo-vacio, #cartel-apodo-largo, #cartel-color-repetido{
+  left: 218px;
+  position: absolute;
+  width: 291px;
+  height: 192px;
+  top: 102px;
+  background: rgba(0, 225, 90, 0.89);
+  border-radius: 41px;
 }
 
 }

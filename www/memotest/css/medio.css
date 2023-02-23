@@ -287,5 +287,15 @@ margin: 0;
         .segundo-a{
             margin-left: 690.22px;
         }
+
+        #cartel-ganador{
+              left: 218px;
+  position: absolute;
+  width: 310px;
+  height: 230px;
+  top: 102px;
+  background: rgba(0, 225, 90, 0.89);
+  border-radius: 41px;
+        }
     
     }

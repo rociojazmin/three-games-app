@@ -235,7 +235,15 @@ table{
     margin-left: 690.22px;
 }
 
-
+#cartel, #cartel-sonido{
+    left: 155px;
+    position: absolute;
+    width: 291px;
+    height: 235px;
+    top: -148px;
+    background: rgba(0, 225, 90, 0.89);
+    border-radius: 41px;
+}
 
 
 }

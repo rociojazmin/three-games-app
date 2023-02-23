@@ -297,4 +297,14 @@ margin: 0;
         text-transform: uppercase;
         color: #FFFFFF;
     }
+
+    #cartel-ganador{
+        left: 218px;
+position: absolute;
+width: 310px;
+height: 230px;
+top: 102px;
+background: rgba(0, 225, 90, 0.89);
+border-radius: 41px;
+  }
 }

@@ -357,4 +357,14 @@ canvas:nth-of-type(5){
   top: 64.50999999999999px;
 }
 
+#cartel, #ya-anoto, #tirar-dados, #anotarse, #primero-doble, #cartel-confirm-juego, #cartel-sonido{
+  left: 211px;
+  position: absolute;
+  width: 291px;
+  height: 235px;
+  top: 92px;
+  background: rgba(0, 225, 90, 0.89);
+  border-radius: 41px;
+}
+
 }

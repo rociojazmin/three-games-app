@@ -65,9 +65,9 @@ function init(cardsNumber) {
 
     // Board
     const iconsNumber = cardsNumber / 2;
-    const iconsToUse = ICONS.slice(0, iconsNumber);
+    const iconsToUse = ICONS.slice(0, iconsNumber); //selecciono la cantidad necesaria de iconos
     iconsToUse.push(...iconsToUse);
-    iconsToUse.sort(() => Math.random() - 0.5);
+    iconsToUse.sort(() => Math.random() - 0.5); //mezclamos
 
     for (let i = 0; i < iconsToUse.length; i++) {
         game.board.push({
@@ -79,7 +79,6 @@ function init(cardsNumber) {
 
 
 function draw() {
-    console.log(game);
     let cardsDom = [];
     for (let i = 0; i < game.board.length; i++) {
         let card = game.board[i];
@@ -97,8 +96,7 @@ function draw() {
         `);
     }
 
-
-    document.getElementById("tablero").innerHTML = cardsDom.join(" ");
+    document.getElementById("tablero").innerHTML = cardsDom.join(" "); //convertimos el array en string
 }
 
 
